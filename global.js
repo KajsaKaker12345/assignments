@@ -1,4 +1,20 @@
 import {assignments} from "./assignments.js";
-const global = document.getElementById("global");
 
-global.innerHTML = `<a href="${assignments[0].link}">${assignments[0].title}</a>`;
+// generera navigationen
+export function createNavigation() {
+const globalList = document.getElementById("list");
+
+if (!globalList) return;
+
+for (const a of assignments) {
+const li = document.createElement("li")
+const link = document.createElement("a")
+link.href = a.link;
+link.textContent = a.title;
+
+li.append(link);
+globalList.append(li);
+}
+}
+
+createNavigation();
