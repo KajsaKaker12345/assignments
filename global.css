@@ -18,8 +18,8 @@ body {
 a {
     color: black;
 }
-a.active {
-    color: rgb(230, 227, 233);
+li.active {
+    background-color: rgb(165, 128, 182);
 }
 #list {
     text-decoration: none;
