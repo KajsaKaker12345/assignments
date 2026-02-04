@@ -1,7 +1,7 @@
 import {assignments} from "./assignments.js";
 
 // generera navigationen
-export function createNavigation(subfold = true) {
+export function createNavigation(subfold = false) {
 const globalList = document.getElementById("list");
 
 const currentPage = document.body.dataset.page;
@@ -13,7 +13,7 @@ link.href = a.link;
 link.textContent = a.title;
 link.dataset.id = a.id;
 
-if (subfold) {
+if (!subfold) {
     link.href = "../" + a.link;
 }
 
