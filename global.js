@@ -1,10 +1,9 @@
 import {assignments} from "./assignments.js";
 
 // generera navigationen
-export function createNavigation() {
+export function createNavigation(subfold = true) {
 const globalList = document.getElementById("list");
 
-if (!globalList) return;
 const currentPage = document.body.dataset.page;
 
 for (const a of assignments) {
@@ -14,14 +13,16 @@ link.href = a.link;
 link.textContent = a.title;
 link.dataset.id = a.id;
 
+if (subfold) {
+    link.href = "../" + a.link;
+}
+
 if (a.id === currentPage) {
     link.classList.add("active");
-    li.classList.add("active")
+    li.classList.add("active");
 }
 
 li.append(link);
 globalList.append(li);
 }
 }
-
-createNavigation();

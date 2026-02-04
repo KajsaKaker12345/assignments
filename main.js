@@ -1,6 +1,7 @@
 import {createNavigation} from "./global.js";
 import { assignments } from "./assignments.js";
-console.log(createNavigation);
+
+createNavigation();
 
 const container = document.getElementById("assignment");
 const assignment = assignments.find(assignments => assignments.id === "assignment1" );

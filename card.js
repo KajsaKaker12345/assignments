@@ -1,7 +1,7 @@
 import { assignments } from "./assignments.js";
 // funktion skapa kort
 
-console.log("testcards")
+
 export function createCards() {
     for (const a of assignments) {
         //skapandet av elementen
@@ -23,4 +23,3 @@ export function createCards() {
         container.append(div);
     }
 }
-createCards();
