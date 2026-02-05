@@ -28,7 +28,5 @@ li.active {
     gap: 1em;
 }
 #list a:hover {
-    background-color: aliceblue;
     transition: 0.3s;
-    
 }

@@ -8,7 +8,7 @@ export const assignments = [
 {
     id: "assignment2",
     title: "Uppgift 2 ",
-    link: "",
+    link: "assignment2/index.html",
     description: "Skapa en produktsida som dynamiskt renderar produkter från datastruktur"
 }, 
 ];
