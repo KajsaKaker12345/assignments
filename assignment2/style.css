@@ -1,0 +1,24 @@
+.div img {
+    width: 200px;
+    height: 200px;
+}
+.div {
+    background-color: #ffffff;
+    border: solid black 1px;
+    margin: 10px;
+    padding: 10px;
+}
+div li {
+    list-style: none;
+}
+#product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    padding: 30px;
+}
+main h2 {
+    background-color: rgb(200,198,232);
+    text-align: center;
+    padding: 10px;
+}
