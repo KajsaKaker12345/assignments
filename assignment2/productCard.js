@@ -1,3 +1,4 @@
+import { addToCart } from "./cart.js";
 import { products } from "./products.js";
 
 export function createCards() {
@@ -19,8 +20,11 @@ export function createCards() {
     p.textContent = product.description;
     category.textContent = product.category;
     button.textContent = "Lägg i kundvagn";
+    button.addEventListener("click", () => {
+        addToCart(product);
+    });
     
-    div.append(img, heading, price, p, category, button);
+    div.append(img, heading, price, p, button,category);
     section.append(div);
     
     }
