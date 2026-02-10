@@ -8,7 +8,7 @@ export function createCards() {
     div.classList.add("div");
     const img = document.createElement("img");
     const heading = document.createElement("h3");
-    const price = document.createElement("h4");
+    const price = document.createElement("h3");
     const p = document.createElement("p");
     const category = document.createElement("li");
     const button = document.createElement("button");
@@ -16,7 +16,7 @@ export function createCards() {
     img.src = product.image;
     img.alt = product.name;
     heading.textContent = product.name;
-    price.textContent = `Pris: ${product.price}kr`;
+    price.textContent = `${product.price}kr`;
     p.textContent = product.description;
     category.textContent = product.category;
     button.textContent = "Lägg i kundvagn";
@@ -24,7 +24,7 @@ export function createCards() {
         addToCart(product);
     });
     
-    div.append(img, heading, price, p, button,category);
+    div.append(img, heading, p, price, button,category);
     section.append(div);
     
     }
