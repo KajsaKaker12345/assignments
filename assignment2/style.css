@@ -17,8 +17,22 @@ div li {
     max-width: 600px;
     padding: 30px;
 }
+#div {
+    display: flex;
+    gap: 20px;
+}
 main h2 {
     background-color: rgb(200,198,232);
     text-align: center;
     padding: 10px;
 }
+#cart {
+    margin-top: 40px;
+    width: 320px;
+    height: 600px;
+    position: sticky;
+    top: 20px;
+    border-radius: 3px;
+    border: solid 6px rgb(200,198,232);
+    background-color: #ffffff;
+ }

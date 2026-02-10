@@ -20,7 +20,7 @@ export const products = [
     name: "MacBook air",
     description: "En begagnad MacBook air i okej skick.",
     price: 4000,
-    image: "images/MacBookAir.jpg",
+    image: "images/macbookAir.jpg",
     category: ["Computers", "Apple"]
 },
 {
@@ -28,7 +28,7 @@ export const products = [
     name: "HP ProBook",
     description: "En begagnad HP Probook modell 2018 i gott skick",
     price: 2500,
-    image: "images/HP.png",
+    image: "images/hp.png",
     category: ["Computers", "HP"]
 },
 {
@@ -36,7 +36,7 @@ export const products = [
     name: "HP ProBook G8",
     description: "En begagnad HP Probook i gott skick",
     price: 4500,
-    image: "images/G8.png",
+    image: "images/hp8.png",
     category: ["Computers", "HP"]
 },
 {
@@ -44,7 +44,7 @@ export const products = [
     name: "Nikon D3300",
     description: "En begagnad Nikon D3300 i gott skick",
     price: 3000,
-    image: "images/nikonD3300.jpg",
+    image: "images/nikond3300.jpg",
     category: ["Cameras", "Nikon"]
 },
 {
@@ -52,7 +52,7 @@ export const products = [
     name: "Nikon Z",
     description: "En begagnad Nikon Z i okej skick",
     price: 6500,
-    image: "images/nikonZ.jpg",
+    image: "images/nikonz.jpg",
     category: ["Cameras", "Nikon"]
 },
 {
@@ -60,7 +60,7 @@ export const products = [
     name: "Nikon D7500",
     description: "En begagnad Nikon D7500 i gott skick",
     price: 5000,
-    image: "images/nikonD7500.jpg",
+    image: "images/nikond7500.jpg",
     category: ["Cameras", "Nikon"]
 }
 ]
