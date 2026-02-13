@@ -1,10 +1,15 @@
+body {
+    background-color: rgb(238, 233, 246);
+    font-family: 'Courier New', Courier, monospace;
+}
 header, footer {
     background-color: rgb(200, 198, 232);
     padding: 15px;
 }
-body {
-    background-color: rgb(238, 233, 246);
-    font-family: 'Courier New', Courier, monospace;
+header h1 {
+    text-align: center;
+}
+main {
     margin: auto;
     padding: 0;
     max-width: 1000px;
@@ -24,8 +29,10 @@ li.active {
 #list {
     text-decoration: none;
     display: flex;
+    padding: 0;
     list-style: none;
     gap: 1em;
+    justify-content: center;
 }
 #list a:hover {
     transition: 0.3s;
