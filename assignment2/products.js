@@ -22,7 +22,7 @@ export const products = [
     name: "MacBook air",
     description: "En begagnad MacBook air i okej skick.",
     price: 4000,
-    image: "images/macbookAir.jpg",
+    image: "images/MacBookAir.jpg",
     category: ["Computers", "Apple"],
     count: 1
 },
@@ -31,7 +31,7 @@ export const products = [
     name: "HP ProBook",
     description: "En begagnad HP Probook modell 2018 i gott skick",
     price: 2500,
-    image: "images/hp.png",
+    image: "images/HP.png",
     category: ["Computers", "HP"],
     count: 1
 },
@@ -52,7 +52,7 @@ export const products = [
     image: "images/nikond3300.jpg",
     category: ["Cameras", "Nikon"],
     count: 1
-    
+
 },
 {
     id: 7,
@@ -68,7 +68,7 @@ export const products = [
     name: "Nikon D7500",
     description: "En begagnad Nikon D7500 i gott skick",
     price: 5000,
-    image: "images/nikond7500.jpg",
+    image: "images/nikonD7500.jpg",
     category: ["Cameras", "Nikon"],
     count: 1
 }
