@@ -49,7 +49,7 @@ export const products = [
     name: "Nikon D3300",
     description: "En begagnad Nikon D3300 i gott skick",
     price: 3000,
-    image: "images/nikond3300.jpg",
+    image: "images/nikonD3300.jpg",
     category: ["Cameras", "Nikon"],
     count: 1
 
@@ -59,7 +59,7 @@ export const products = [
     name: "Nikon Z",
     description: "En begagnad Nikon Z i okej skick",
     price: 6500,
-    image: "images/nikonz.jpg",
+    image: "images/nikonZ.jpg",
     category: ["Cameras", "Nikon"],
     count: 1
 },
