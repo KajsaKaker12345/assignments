@@ -3,10 +3,29 @@ main {
 }
 .match {
     border-radius: 10px;
-    border: solid rgb(95, 135, 165) 6px;
+    border: solid rgb(95, 135, 165) 1px;
     background-color: rgb(252, 246, 246);
-    text-align: center;
     width: 350px;
     margin: 10px;
     padding: 10px;
+}
+.VS {
+  text-align: center;
+  color: blue;
+  font-size: 1.2em;
+}
+.contestant {
+  background-color: antiquewhite;
+}
+.turneringen {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;  /* Sträcker ut rundorna vertikalt */
+  gap: 2rem;
+}
+.round {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;  /* Matcherna fördelas jämnt i det vertikala utrymmet */
+  gap: 1rem;
 }
