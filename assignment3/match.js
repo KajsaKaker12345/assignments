@@ -1,15 +1,3 @@
-fetch("contestants.json")
-.then(response => response.json())
-.then(data => {
-
-    const container = document.getElementById("turneringen");
-    for (let i = 0; i < data.length; i += 2) {
-    const match1 = new Match(data[i], data[i + 1]);
-   
-    container.append(match1.makeHTML());
-}
-});
-
 export class Match {
     #contestant1;
     #contestant2;
@@ -37,9 +25,17 @@ export class Match {
     makeHTML() {
         const card = document.createElement("div");
         card.classList.add("match");
+        const catchphrase1 = this.#contestant1.catchphrase ?? "Ingen vald catchphrase än";
+        const catchphrase2 = this.#contestant2.catchphrase ?? "Ingen vald catchphrase än";
 
-        card.innerHTML = `<div><h3>${this.#contestant1.name}</h3><p>${this.#contestant1.catchphrase}</p><h4></div>VS<div></h4><h3>${this.#contestant2.name}</h3><p>${this.#contestant2.catchphrase}</p></div>`;
-
+        card.innerHTML = `<div class="contestant">
+        <h3>${this.#contestant1.name}, level: ${this.#contestant1.skillLevel}</h3>
+        <p>"${catchphrase1}"</p></div>
+        <div class="VS">VS</div>
+        <div class="contestant"><h3>${this.#contestant2.name}, level: ${this.#contestant2.skillLevel}</h3>
+        <p>"${catchphrase2}"</p></div>`;
+        
+        
         return card;
     }
 } 
