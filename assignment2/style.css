@@ -4,6 +4,9 @@
     width: 200px;
     
 }
+main {
+    max-width: 800px;
+}
 .div {
     background-color: #ffffff;
     border: solid rgb(215, 212, 212) 1px;
