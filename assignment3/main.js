@@ -2,7 +2,7 @@ import { createNavigation } from "../global.js";
 createNavigation(true);
 import { createRounds } from "./round.js";
 let playingMatch = [];
-const names = ["Kvartsfinal", "Semifinal", "Final"];
+const names = ["KVARTSFINAL", "SEMIFINAL", "FINAL"]; 
 let currentRound = 0;
 startGame();    
 
@@ -14,7 +14,7 @@ fetch("contestants.json")
 
 
       // skapa första matcher med datan  
-        playingMatch = createRounds(data, "Kvartsfinal");
+        playingMatch = createRounds(data, "KVARTSFINAL");
         currentRound = 0;
 
     });}
