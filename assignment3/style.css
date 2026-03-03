@@ -1,5 +1,7 @@
 main {
     font-size: 10px;
+    max-width: 1250px;
+    background-color: rgb(200, 198, 232);
 }
 .match {
     border-radius: 10px;
@@ -14,9 +16,6 @@ main {
   color: blue;
   font-size: 1.2em;
 }
-.contestant {
-  background-color: antiquewhite;
-}
 .turneringen {
   display: flex;
   flex-direction: row;
@@ -28,4 +27,26 @@ main {
   flex-direction: column;
   justify-content: space-around;  /* Matcherna fördelas jämnt i det vertikala utrymmet */
   gap: 1rem;
+}
+.win {
+  background-color: rgb(211, 233, 211);
+  border-radius: 15px;
+  padding: 1px;
+}
+#button {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 10px;
+}
+h2 {
+  margin: 0 auto 0 auto;
+}
+button {
+  font-size: 15px;
+  padding: 6px;
+  border: solid 1px blue;
+  box-shadow: 0 2px 4px rgb(34, 33, 33);
+  border-radius: 4px;
+  background-color: rgb(216, 210, 245);
 }
