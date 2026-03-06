@@ -2,8 +2,6 @@ import { createNavigation } from "../global.js";
 createNavigation(true);
 import { createRounds } from "./round.js";
 let playingMatch = [];
-const names = ["KVARTSFINAL", "SEMIFINAL", "FINAL"]; 
-let currentRound = 0;
 startGame();    
 
 // Hämta contestants från fil json
@@ -14,8 +12,7 @@ fetch("contestants.json")
 
 
       // skapa första matcher med datan  
-        playingMatch = createRounds(data, "KVARTSFINAL");
-        currentRound = 0;
+        playingMatch = createRounds(data);
 
     });}
 
@@ -25,9 +22,9 @@ button.addEventListener("click", () => {
     for (const match of playingMatch) {
         match.compete();
     }
-    currentRound++;
+
     const winners = playingMatch.map(m => m.winner)
-    playingMatch = createRounds(winners, names[currentRound]);
+    playingMatch = createRounds(winners);
 
     if (playingMatch.length === 2) {
         button.textContent = "Simulera Semifinal"
@@ -36,7 +33,7 @@ button.addEventListener("click", () => {
         button.textContent = "Simulera Final"
     } else if (playingMatch.length === 0) {
         button.hidden = true;
-        roundName = "";
+        
     }
 });
     // restartknapp
@@ -49,3 +46,4 @@ restart.addEventListener("click", () => {
 
     startGame();
 });
+console.log();
